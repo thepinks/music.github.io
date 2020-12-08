@@ -1,0 +1,61 @@
+@import './variables';
+
+@for $i from 1 through 12 {
+    $w:(($i/12)-0.02)*100%;
+    .Mlarge-#{$i}{flex-basis: $w;}
+}
+@for $i from 1 through 12 {
+    $w:($i/12)*100%;
+    .large-#{$i}{flex-basis: $w;}
+}
+
+.header-body {
+    width: 75rem;
+}
+
+nav {
+    width: 75rem;
+}
+
+main {
+    width: 75rem;
+}
+
+.lawyers {
+    width: 75rem;
+    justify-content: center;
+    div {
+        margin: 0px 10px 0px 10px;
+    }
+}
+
+.cta {
+    width: 75rem;
+    justify-content: center;
+    .large-4 {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+}
+
+.blogs {
+    width: 75rem;
+}
+
+.tip-faq {
+    width: 75rem;
+}
+.faq {
+    height: 100%;
+    margin-top: 0;
+    h2, p, a {
+        width: 90%;
+    }
+}
+
+footer {
+    width: 75rem;
+    p {
+        width: 20%;
+    }
+}
